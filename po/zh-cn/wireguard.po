@@ -36,3 +36,6 @@ msgstr "对端端口"
 
 msgid "Persistent Keep Alive"
 msgstr "连接保活间隔"
+
+msgid "Optional. Seconds between keep alive messages. Default is 0 (disabled). Recommended value if this device is behind a NAT is 25."
+msgstr "可选项。单位秒。可选范围是 0 ~ 65535。0 表示禁用。建议 25"

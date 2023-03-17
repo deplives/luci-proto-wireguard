@@ -64,6 +64,5 @@ endpoint_host.datatype = "host"
 endpoint_port = peers:option(Value, "endpoint_port", translate("Endpoint Port"), translate("Optional"))
 endpoint_port.datatype = "port"
 
-persistent_keepalive = peers:option(Value, "persistent_keepalive", translate("Persistent Keep Alive"), translate("Optional. Seconds between keep alive messages. " .. "Default is 0 (disabled). Recommended value if " .. "this device is behind a NAT is 25."))
+persistent_keepalive = peers:option(Value, "persistent_keepalive", translate("Persistent Keep Alive"), translate("Optional. Seconds between keep alive messages. Default is 0 (disabled). Recommended value if this device is behind a NAT is 25."))
 persistent_keepalive.datatype = "range(0,65535)"
-persistent_keepalive.placeholder = "0"
