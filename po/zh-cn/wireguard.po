@@ -26,7 +26,7 @@ msgid "Allowed IPs"
 msgstr "允许的 IP 地址(段)"
 
 msgid "Route Allowed IPs""
-msgstr "路由的 IP 地址(段)"
+msgstr "路由允许的 IP 地址(段)"
 
 msgid "Endpoint Host"
 msgstr "对端主机"
