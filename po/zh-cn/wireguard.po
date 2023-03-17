@@ -1,0 +1,41 @@
+msgid ""
+msgstr ""
+
+msgid "Private Key"
+msgstr "私钥"
+
+msgid "Required"
+msgstr "必填"
+
+msgid "Listen Port"
+msgstr "监听端口"
+
+msgid "Optional"
+msgstr "可选"
+
+msgid "IP Addresses"
+msgstr "IP 地址"
+
+msgid "Recommended"
+msgstr "推荐"
+
+msgid "Public Key"
+msgstr "公钥"
+
+msgid "Preshared Key"
+msgstr "预共享密钥"
+
+msgid "Allowed IPs"
+msgstr "允许的 IP 地址(段)"
+
+msgid "Route Allowed IPs""
+msgstr "路由的 IP 地址(段)"
+
+msgid "Endpoint Host"
+msgstr "对端主机"
+
+msgid "Endpoint Port"
+msgstr "对端端口"
+
+msgid "Persistent Keep Alive"
+msgstr "连接保活间隔"
