@@ -14,12 +14,12 @@ local_public_key = section:taboption("general", Value, "local_public_key", trans
 local_public_key.datatype = "and(base64,rangelength(44,44))"
 local_public_key.optional = false
 
-listen_port = section:taboption("general", Value, "listen_port", translate("监听端口"), translate("可选"))
+listen_port = section:taboption("general", Value, "listen_port", translate("监听端口"))
 listen_port.datatype = "port"
 listen_port.placeholder = translate("random")
 listen_port.optional = true
 
-addresses = section:taboption("general", DynamicList, "addresses", translate("IP 地址(段)"), translate("推荐"))
+addresses = section:taboption("general", DynamicList, "addresses", translate("IP 地址(段)"))
 addresses.datatype = "ipaddr"
 addresses.optional = true
 
@@ -46,26 +46,26 @@ peers.template = "cbi/tsection"
 peers.anonymous = true
 peers.addremove = true
 
-public_key = peers:option(Value, "public_key", translate("节点公钥"), translate("必填"))
+public_key = peers:option(Value, "public_key", translate("节点公钥"))
 public_key.datatype = "and(base64,rangelength(44,44))"
 public_key.optional = false
 
-preshared_key = peers:option(Value, "preshared_key", translate("预共享密钥"), translate("可选"))
+preshared_key = peers:option(Value, "preshared_key", translate("预共享密钥"))
 preshared_key.password = true
 preshared_key.datatype = "and(base64,rangelength(44,44))"
 preshared_key.optional = true
 
-allowed_ips = peers:option(DynamicList, "allowed_ips", translate("允许的 IP 地址(段)"), translate("必填"))
+allowed_ips = peers:option(DynamicList, "allowed_ips", translate("允许的 IP 地址(段)"))
 allowed_ips.datatype = "ipaddr"
 allowed_ips.optional = false
 
-route_allowed_ips = peers:option(Flag, "route_allowed_ips", translate("路由允许的 IP 地址(段)"), translate("可选"))
+route_allowed_ips = peers:option(Flag, "route_allowed_ips", translate("路由允许的 IP 地址(段)"))
 
-endpoint_host = peers:option(Value, "endpoint_host", translate("对端主机"), translate("可选"))
+endpoint_host = peers:option(Value, "endpoint_host", translate("对端主机"))
 endpoint_host.datatype = "host"
 
-endpoint_port = peers:option(Value, "endpoint_port", translate("对端端口"), translate("可选"))
+endpoint_port = peers:option(Value, "endpoint_port", translate("对端端口"))
 endpoint_port.datatype = "port"
 
-persistent_keepalive = peers:option(Value, "persistent_keepalive", translate("连接保活间隔"), translate("可选。单位秒。范围是 0 ~ 65535。0 表示禁用。建议 25"))
+persistent_keepalive = peers:option(Value, "persistent_keepalive", translate("连接保活间隔"), translate("可选。单位秒。范围是 0 ~ 65535。0 表示禁用"))
 persistent_keepalive.datatype = "range(0,65535)"
