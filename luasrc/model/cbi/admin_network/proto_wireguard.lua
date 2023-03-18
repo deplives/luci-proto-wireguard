@@ -1,15 +1,18 @@
 local map, section, net = ...
 local ifname = net:get_interface():name()
-local private_key, listen_port
+local private_key, local_public_key, listen_port
 local metric, mtu, preshared_key
 local peers, public_key, allowed_ips, endpoint, persistent_keepalive
 
 -- general --
 
-private_key = section:taboption("general", Value, "private_key", translate("私钥"), translate("必填"))
-private_key.password = true
-private_key.datatype = "and(base64,rangelength(44,44))"
-private_key.optional = false
+local_private_key = section:taboption("general", Value, "private_key", translate("本地私钥"))
+local_private_key.datatype = "and(base64,rangelength(44,44))"
+local_private_key.optional = false
+
+local_public_key = section:taboption("general", Value, "local_public_key", translate("本地公钥"))
+local_public_key.datatype = "and(base64,rangelength(44,44))"
+local_public_key.optional = false
 
 listen_port = section:taboption("general", Value, "listen_port", translate("监听端口"), translate("可选"))
 listen_port.datatype = "port"
