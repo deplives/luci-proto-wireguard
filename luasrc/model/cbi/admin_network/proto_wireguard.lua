@@ -54,7 +54,6 @@ peer_public_key.optional = false
 preshared_key = peers:option(Value, "preshared_key", translate("预共享密钥"))
 preshared_key.password = true
 preshared_key.datatype = "and(base64,rangelength(44,44))"
-preshared_key.optional = true
 
 allowed_ips = peers:option(DynamicList, "allowed_ips", translate("允许的 IP 地址(段)"))
 allowed_ips.datatype = "ipaddr"
